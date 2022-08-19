@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fox To You</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hero-image">
+        <!-- <img in CSS> -->
+        <div class="hero-text">
+          <h1>Fox to you</h1>
+          <p>Order your own fox shirt</p>
+          <!-- <button>Hire me</button> -->
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Signup form -->
+
+      <div class="main"></div>
+
+      <section class="form-section">
+        <h2>Order your Fox shirt!</h2>
+        <br />
+        <form
+        class=""
+          id="signUpForm"
+          action="http://httpbin.org/anything"
+          method="POST"
+        >
+          <h3>Personal text</h3>
+          <input
+            type="text"
+            name="Message"
+            required
+            placeholder="Write your text..."
+          />
+
+          <!-- radio buttons -->
+          <h3>Size</h3>
+          <div class="box">
+            <input type="radio" id="Small" name="quality" value="Small" />
+            <label for="Small">Small</label>
+          </div>
+
+          <div class="box">
+            <input type="radio" id="Medium" name="quality" value="Medium" />
+            <label for="Medium">Medium</label>
+          </div>
+
+          <div class="box">
+            <input type="radio" id="Large" name="quality" value="Large" />
+            <label for="Large">Large</label>
+          </div>
+
+          <!-- Personal information -->
+          <div>
+            <label for="Name">Name</label>
+            <input
+              type="text"
+              name="Name"
+              required
+              placeholder="Name Surname"
+            />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="@mail.com" required />
+          </div>
+          <div>
+            <label for="Address1">Street</label>
+            <input
+              type="text"
+              name="Address1"
+              required
+              placeholder="Street name 123"
+            />
+          </div>
+          <div>
+            <label for="Address2">Zip code</label>
+            <input type="text" name="Address2" required placeholder="123 45" />
+          </div>
+          <div class="box check">
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              value="accept"
+              required
+            />
+            <label for="terms">I accept the terms and conditions</label>
+          </div>
+
+          
+            <button class="submit" type="submit">Order!</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="accordion-section">
+        <h2>FAQ</h2>
+
+        <div class="question" id="section1">How long can my personal text be?</div>
+        <div class="answer">
+          <p>That is completely up to you. However the more text you write the smaller it will be on the t-shirt.</p>
+        </div>
+
+        <div class="question" id="section2">How big are your sizes?</div>
+        <div class="answer">
+          <ul>
+            <li>Small = 36 in UK sizes</li>
+            <li>Medium = 40 in UK sizes </li>
+            <li>Large = 44 in UK sizes</li>
+          </ul>
+          <p>For detailed information follow the standart size guide by clicking <a href="https://www.blitzresults.com/en/european-sizes/" target=”_blank”>here</a></p>
+        </div>
+
+        <div class="question" id="section3">How do I pay?</div>
+        <div class="answer">
+          <p>We will send an invoice to your e-mail address once you'll have clicked the button order.</p>
+        </div>
+
+        <div class="question" id="section4">How long are you delivery times?</div>
+        <div class="answer">
+          <p>The delivery is managed by <a href="https://www.postnord.se/" target=”_blank”>Postnord</a> and takes usually 3-5 days.</p>
+        </div>
+
+        <div class="question" id="section5">What is your return policy?</div>
+        <div class="answer">
+          <p>You are entitled to return your ordered unworn items within 30 calendar days</p>
+        </div>
+
+        <img class="shirt"  src="./images/shirt.jpg" alt="For t-shirt">
+
+        <script src="./script.js"></script>
+      </section>
+    </main>
+  </body>
+</html>

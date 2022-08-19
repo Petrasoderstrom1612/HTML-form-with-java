@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+  color: rgb(48, 47, 47);
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #f69847;
+}
+
+header {
+  height: 56%;
+}
+
+main {
+  margin: 20px 0 0 0;
+}
+
+h1 {
+  font-size: 35px;
+  color: rgb(240, 68, 192);
+}
+
+h2 {
+  font-size: 30px;
+  color: rgb(240, 68, 192);
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Position and center the image to scale nicely on all screens */
+.hero-image {
+  height: 100%;
+  background-image: url("images/fox.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 246, 252, 0.514);
+  padding: 10px;
+  width: 53%;
+}
+
+.hero-text p {
+  font-style: italic;
+}
+
+.submit {
+  margin: 20px 0px 0px 0px;
+  padding: 7px;
+  background-color: rgb(240, 68, 192);
+  margin: 5px auto auto0;
+  font-weight: 600;
+  border: none;
+  border-radius: 10%;
+  border: solid rgb(240, 68, 192);
+  width: 30%;
+}
+
+button:hover {
+  background-color: rgb(224, 58, 141);
+}
+
+.form-section {
+  /* border-radius: 5%; */
+  padding: 10px;
+  /* border: 2px solid rgb(240, 68, 192); */
+}
+
+.form-section {
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(245, 199, 224);
+  padding: 20px;
+}
+
+input {
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: rgb(255, 246, 252);
+  border: none;
+  border-radius: 5px;
+}
+
+.box {
+  gap: 5px;
+  margin: 10px;
+}
+
+.check {
+  margin: 15px 0 0 0;
+}
+
+.accordion-section {
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(245, 199, 224);
+  padding: 10px;
+  border: 2px solid rgb(240, 68, 192);
+}
+
+li {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.question {
+  padding: 0 0 2px 0;
+  margin: 0 0 5px 0;
+}
+
+.question:hover {
+  background-color: rgb(224, 58, 141);
+}
+
+.answer {
+  display: none;
+}
+
+.active + .answer {
+  display: block;
+}
+
+.active {
+  background-color: rgb(240, 68, 192);
+}
+
+.answer {
+  border: 2px solid rgb(240, 68, 192);
+}
+
+.shirt {
+  width: 100%;
+}
+
+/* .....................Tablet..................................... */
+@media (min-width: 668px) and (max-width: 1023px) {
+  header {
+    height: 54%;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .hero-text {
+    width: 40%;
+  }
+
+  .submit {
+    width: 20%;
+  }
+
+  .shirt {
+    width: 100%;
+  }
+}
+
+/* ....................Desktop..................................... */
+@media (min-width: 1024px) {
+  header {
+    height: 54%;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .hero-text {
+    width: 20%;
+  }
+
+  .submit {
+    width: 20%;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  section {
+    width: 50%;
+    height: 50%;
+  }
+
+  .shirt {
+    width: 57%;
+  }
+}
+
+/* ....................Large screen................................ */
+@media (min-width: 1300px) {
+  header {
+    height: 75%;
+  }
+
+  .hero-image {
+    height: 700px;
+  }
+
+  .submit {
+    width: 8%;
+  }
+
+  section {
+    width: 50%;
+    height: 50%;
+  }
+
+  .shirt {
+    width: 28.8%;
+  }
+}
